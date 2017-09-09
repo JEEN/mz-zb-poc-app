@@ -1,0 +1,19 @@
+{
+  "family": "zb-helloworld-api",
+  "containerDefinitions": [
+    {
+      "name": "helloworld-api",
+      "image": "430229163952.dkr.ecr.ap-northeast-1.amazonaws.com/zb/app:latest",
+      "cpu": 100,
+      "portMappings": [
+        {
+          "protocol": "tcp",
+          "containerPort": 80,
+          "hostPort": 0
+        }
+      ],
+      "memory": 500,
+      "essential": true
+    }
+  ]
+}
